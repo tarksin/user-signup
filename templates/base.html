@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sign up</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet"> -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+ <style>
+ .error {
+   color: red; font-size: 1.0em
+   }
+   </style>
+</head>
+
+
+
+<body>
+<img src="{{ url_for('static', filename='img/spacer.svg') }}" height="15" alt="spacer">
+
+<br>
+    <img src="{{ url_for('static', filename='img/spacer.svg') }}" width="15" alt="spacer">
+    <a href="{{ url_for('index') }}">  <img src="{{ url_for('static', filename='img/maxxLogo2g.svg') }}" height="35" alt="maxx logo"></a>
+    <img src="{{ url_for('static', filename='img/spacer.svg') }}" width="15" alt="spacer">
+    <img src="{{ url_for('static', filename='img/software8.svg') }}" height="12" alt="software logo">
+<br>
+    <img src="{{ url_for('static', filename='img/spacer.svg') }}" height="30" alt="spacer">
+
+<div class="content container">
+
+    <h1 style = "color:#006400; text-align: center;">{{ header_text }}</h1>
+    <hr>
+{% block content %}
+
+{% endblock %}
+
+</div>
+<br>
+<hr>
+<div>
+<img src="{{ url_for('static', filename='img/spacer.svg') }}" width="225" heigth="50" alt="spacer">
+<img src="{{ url_for('static', filename='img/python.svg') }}" height="30" alt="python logo">
+<img src="{{ url_for('static', filename='img/spacer.svg') }}" width="75" alt="spacer">
+<img src="{{ url_for('static', filename='img/flask.png') }}" height="30" alt="flask logo">
+<img src="{{ url_for('static', filename='img/spacer.svg') }}" width="75" alt="spacer">
+<img src="{{ url_for('static', filename='img/git_logo.png') }}" height="35" alt="git logo">
+
+</div>
+
+
+  </body>
+</html>
